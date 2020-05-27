@@ -3,8 +3,8 @@ from flask import request, Flask, redirect, jsonify, render_template
 from time import time
 import os
 import io
-
-from .lib import getMRZFromImg, mrzToText, getMRZData
+import lib
+from lib import getMRZFromImg, mrzToText, getMRZData
 
 UPLOAD_FOLDER = './uploads/'
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg'])
