@@ -32,9 +32,9 @@ def mrzdata():
       img  = getMRZFromImg(imgpath=imgpath)
       text = mrzToText(img)
       data, t  = getMRZData(text)
-      return  {
+      return jsonify( {
         "mrzdata": data,
-    }
+    })
 
 
 @app.route('/', methods=['POST'])
