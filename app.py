@@ -4,7 +4,7 @@ from time import time
 import os
 import io
 
-from lib import getMRZFromImg, mrzToText, getMRZData
+from .lib import getMRZFromImg, mrzToText, getMRZData
 
 UPLOAD_FOLDER = './uploads/'
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg'])
