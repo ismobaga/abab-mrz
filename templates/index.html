@@ -1,0 +1,20 @@
+<!doctype html>
+  <title>Results</title>
+  <h2> Le MZR DECODE</h2>
+  {% if resultat %}
+  <p>
+  <pre> 
+  <code>{{resultat}} 
+  </code>
+  <pre>
+
+  </p>
+  {% endif %}
+  <form method=post enctype=multipart/form-data>
+    <input type=file name=file>
+    <input type=submit value=Upload>
+  </form>
+
+
+
+  

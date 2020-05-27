@@ -1,0 +1,16 @@
+version: '3'
+services:
+  mrzapi:
+    build: .
+    ports:
+      - "8080:5000"
+
+    environment:
+         FLASK_ENV: production
+         VIRTUAL_HOST: mrz.ibagayoko.ml
+         LETSENCRYPT_HOST: mrz.ibagayoko.ml
+         LETSENCRYPT_EMAIL: ismail@bagayoko.ml
+networks:
+  default:
+    external:
+      name: nginx-proxy
