@@ -1,5 +1,13 @@
+# MRZ 
 
 ## Setup
+### Single command Setup
+Setup avec docker
+```
+docker-compose up -d
+```
+
+###  ....
 Installez les dependance dans requirement
 
 Use trained data from 
