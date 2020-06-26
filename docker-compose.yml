@@ -7,8 +7,8 @@ services:
 
     environment:
          FLASK_ENV: production
-         VIRTUAL_HOST: mrz.ibagayoko.ml
-         LETSENCRYPT_HOST: mrz.ibagayoko.ml
+         VIRTUAL_HOST: mrz.ibaga.ml
+         LETSENCRYPT_HOST: mrz.ibaga.ml
          LETSENCRYPT_EMAIL: ismail@bagayoko.ml
 networks:
   default:
